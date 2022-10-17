@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+    </head>
+
+    <body>
+        <div id="intro">Left Click to uncover, Right Click to flag.</div>
+        <br>
+        <div id="mine_container"></div>
+        <div id="new_game_div">
+            <br>
+            Time: <div id="timer">0</div>
+            Clicks: <div id="clicks">0</div>
+            <br>
+            Aantal rijen:<input type="number" id="n" name="n" min="5" max="30" value="10">
+            <br>
+            Aantal kolommen: <input type="number" id="m" name="m" min="5" max="30" value="10">
+            <br>
+            <button onclick="new_game_handler()">New Game</button>
+        </div>
+    </body>
+</html>
