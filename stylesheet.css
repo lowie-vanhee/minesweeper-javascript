@@ -66,4 +66,21 @@ button {
 
 #new_game_div, #intro {
     text-align: center;
+    color: antiquewhite;
+}
+
+#wrapper{
+    align-content: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+#first{
+    padding-left: 46.8%;
+    float: left;
+}
+
+#second{
+    float: left;
+    padding-left: 20px;
 }

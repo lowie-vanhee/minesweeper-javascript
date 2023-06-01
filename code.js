@@ -38,20 +38,20 @@ function generate_board_html(board){
                     row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)' ></td>";
                     break;
                 case 2:
-                    row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)'><img src='flag.png' alt='flag' width='50' height='50'></td>";
+                    row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)'><img src='flag.png' alt='flag' width='40' height='40'></td>";
                     break;
                 case 3:
                     let number = check_number_of_mines(board, i, j);
                     row_html += "<td class=\"emptyTile\" oncontextmenu='event.preventDefault();'>" + number + "</td>";
                     break;
                 case 4:
-                    row_html += "<td class=\"emptyTile\" oncontextmenu='event.preventDefault();'><img src='bomb.png' alt='bomb' width='50' height='50'></td>";
+                    row_html += "<td class=\"emptyTile\" oncontextmenu='event.preventDefault();'><img src='bomb.png' alt='bomb' width='40' height='40'></td>";
                     break;
                 case 5:
                     row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)'></td>";
                     break;
                 case 6:
-                    row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)'><img src='flag.png' alt='flag' width='50' height='50'></td>";
+                    row_html += "<td class=\"coveredTile\" oncontextmenu='event.preventDefault();' onmousedown='square_click_handler(event, this)'><img src='flag.png' alt='flag' width='40' height='40'></td>";
                     break;
             }
         }
