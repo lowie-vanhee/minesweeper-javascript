@@ -215,6 +215,8 @@ function right_click_handler(row, col) {
 function square_click_handler(event, cell) {
     let col = cell.cellIndex;
     let row = cell.parentNode.rowIndex;
+    if(clicks == 0)
+        reset_timer();
     if(event.button == 0) {
         left_click_handler(row, col);
     } else if (event.button == 2) {
@@ -252,5 +254,4 @@ function new_game_handler() {
     let m = document.getElementById("m").value;
     my_board = generate_random_board(n, m);
     draw_board(my_board)
-    reset_timer();
 }
