@@ -254,4 +254,5 @@ function new_game_handler() {
     let m = document.getElementById("m").value;
     my_board = generate_random_board(n, m);
     draw_board(my_board)
+    clicks = 0;
 }
